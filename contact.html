@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Greenden</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+  <!--Responsive Navbar-->
+  <nav class="bg-green-200 p-1 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <a href="index.html"><img src="./images/logo.png" alt="logo" width="90px" height="40px"></a>
+
+    <!--Menu bar for Phone-->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-6 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class=" hidden md:flex gap-5 text-gray-600">
+      <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+      <li><a class="hover:underline hover:text-black" href="product.html">Product</a></li>
+      <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="max-w-2xl mx-auto py-16 px-6">
+    <!-- Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-green-800">Get in Touch</h2>
+      <p class="mt-4 text-gray-600">We’d love to hear from you! Send us a message and we’ll get back to you as soon as possible.</p>
+    </div>
+
+    <!-- Contact Form Only -->
+    <form class="space-y-6 bg-white p-8 shadow-md rounded-xl">
+      <div>
+        <label for="name" class="block text-sm font-medium">Full Name</label>
+        <input type="text" id="name" placeholder="Your name"
+          class="mt-1 w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-300" />
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com"
+          class="mt-1 w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-300" />
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..."
+          class="mt-1 w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-300"></textarea>
+      </div>
+      <button type="submit"
+        class="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md font-semibold transition duration-200">
+        Send Message
+      </button>
+    </form>
+  </div>
+
+  <!--Footer-->
+  <div class="bg-green-200 p-10 mt-7">
+    <div class="font-bold text-3xl pb-3">Greenden</div>
+    <p>Designed to stay green and gorgeous, our plants make every space feel alive.</p>
+    <p class="pt-8">©2021 greenden.com</p>
+  </div>
+</body>
+</html>
